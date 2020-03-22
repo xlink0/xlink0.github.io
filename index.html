@@ -7,8 +7,70 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="/css/main.css" />
 </head>
 <body>
-
+    <div class="container">
+        <div class="price-box">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="price-slider">
+                        <h4 class="great">Интернет</h4>
+                        <span>Тариф в зависимости от типа ШПД</span>
+                        <div class="btn-group btn-group-justified">
+                            <div class="btn-group btn-group-lg">
+                                <button type="button" class="btn btn-primary btn-lg btn-block month active-month selected-month" id="8mbit">xDSL (линия+аренда модема)</button>
+                            </div>
+                        </div>
+                        <div class="btn-group btn-group-justified">
+                            <div class="btn-group btn-group-lg">
+                                <button type="button" class="btn btn-primary btn-lg btn-block month active-month selected-month" id="100mbit">ETTH/PON (30 Мб + роутер)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="price-form">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="pay_amount" class="control-label">Разовый платеж:</label>
+                                    <span class="help-text">Платеж при подключении</span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="price lead" name="totalprice" type="text" id="pay_amount" disabled="disabled" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="rent_amount" class="control-label">Ежемесячный платеж:</label>
+                                    <span class="help-text">Аренда оборудования + тариф</span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="price lead" name="rent_amount" type="text" id="rent_amount" disabled="disabled" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="agent_amount" class="control-label">Вознаграждение агента:</label>
+                                    <span class="help-text">Разовая выплата</span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="price lead" name="agent_amount" type="text" id="agent_amount" disabled="disabled" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
